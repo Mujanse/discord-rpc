@@ -16,9 +16,9 @@ client.on('ready', async () => {
         state: 'Workspace: CyberSecurityServerDID',
         timestamps: { start: startTime },
         assets: {
-          largeImage: 'vscode', // Название загруженной большой картинки
+          largeImage: 'img_0430', // Название загруженной большой картинки
           largeText: 'Visual Studio Code',
-          smallImage: 'python', // Название загруженной маленькой картинки
+          smallImage: 'img_0425', // Название загруженной маленькой картинки
           smallText: 'Editing Python file'
         }
       }]
