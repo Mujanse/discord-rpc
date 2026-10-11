@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "discord.js-selfbot-v13": "github:CoreDevs/discord.js-selfbot-v13"
+    "discord.js-selfbot-v13": "12.8.2"
   },
   "scripts": {
     "start": "node index.js"
