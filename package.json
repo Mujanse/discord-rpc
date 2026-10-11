@@ -1,11 +1,23 @@
-{
-  "name": "discord-rpc",
-  "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
-    "discord.js-selfbot-v13": "^14.2.1"
-  },
-  "scripts": {
-    "start": "node index.js"
-  }
-}
+const { Client } = require('discord.js-selfbot-v13');
+const client = new Client();
+
+client.on('ready', async () => {
+  console.log(`Запущено от имени ${client.user.tag}!`);
+  
+  setInterval(() => {
+    client.user.setPresence({
+      activities: [{
+        name: 'Visual Studio Code',
+        type: 'PLAYING',
+        details: 'Editing server.py',
+        state: 'Workspace: ofsuw',
+        timestamps: { start: Date.now() },
+        assets: {
+          largeImage: 'python'
+        }
+      }]
+    });
+  }, 15000);
+});
+
+client.login(process.env.TOKEN);
