@@ -1,6 +1,9 @@
 const { Client } = require('discord.js-selfbot-v13');
 const client = new Client();
 
+// Фиксируем время запуска один раз при старте скрипта
+const startTime = Date.now();
+
 client.on('ready', async () => {
   console.log(`Запущено от имени ${client.user.tag}!`);
 
@@ -9,14 +12,14 @@ client.on('ready', async () => {
       activities: [{
         name: 'Visual Studio Code',
         type: 'PLAYING',
-        application_id: '383226320970055681', // ID зарегистрированного приложения VS Code
+        application_id: '383226320970055681',
         details: 'Editing server.py',
         state: 'Workspace: CyberSecurityServerDID',
-        timestamps: { start: Date.now() },
+        timestamps: { start: startTime }, // Используем постоянное время запуска
         assets: {
-          largeImage: 'vscode', // Иконка VS Code
+          largeImage: 'vscode',
           largeText: 'Visual Studio Code',
-          smallImage: 'python', // Иконка Python
+          smallImage: 'python',
           smallText: 'Editing Python file'
         }
       }]
