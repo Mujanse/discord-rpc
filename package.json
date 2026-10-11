@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "discord.js-selfbot-v13": "^14.2.1"
+    "discord.js-selfbot-v13": "^14.3.0"
   },
   "scripts": {
     "start": "node index.js"
