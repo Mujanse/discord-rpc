@@ -10,7 +10,7 @@ client.on('ready', async () => {
         name: 'Visual Studio Code',
         type: 'PLAYING',
         details: 'Editing server.py',
-        state: 'Workspace: ofsuw',
+        state: 'Workspace: CyberSecurityServerDID',
         timestamps: { start: Date.now() },
         assets: {
           largeImage: 'python'
